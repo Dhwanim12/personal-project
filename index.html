@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Personal Project Guidance</title>
+    <link rel="stylesheet" href="thread.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a68b0e4e2.js" crossorigin="anonymous"></script>
+    <script src="data.js"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="critA.html">Criterion A</a></li>
+                    <li><a href="critB.html">Criterion B</a></li>
+                    <li><a href="critC.html">Criterion C</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Discussion Forum</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="main">
+        <div class="top-bar">
+            <h1>
+                My Forum
+            </h1>
+        </div>
+        <div class="threads">
+            <ol>
+                <!-- Dynamic list items will be inserted here -->
+            </ol>
+        </div>
+    </section>
+    <script>
+        console.log(threads);
+        var container = document.querySelector('ol');
+        for (let thread of threads) {
+            var html = `
+            <li class="row">
+                <a href="newforum.html">
+                    <h4 class="title">
+                        ${thread.title}
+                    </h4>
+                    <div class="bottom">
+                        <p class="timestamp">
+                            ${new Date(thread.date).toLocaleString()}
+                        </p>
+                        <p class="comment-count">
+                            ${thread.comments.length} comments
+                        </p>
+                    </div>
+                </a>
+            </li>
+            `
+            container.insertAdjacentHTML('beforeend', html);
+        }
+    </script>
+</body>
+    </section>
+    <section class="footer">
+      <center>
+        <h3>Have a question about the Personal Project? Discuss here</a></h3>
+      </center>
+    </section>
+</head>
+</html>

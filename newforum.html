@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Project Guidance</title>
+    <link rel="stylesheet" href="discussion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8a68b0e4e2.js" crossorigin="anonymous"></script>
+    <script src="discussionn.js"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="critA.html">Criterion A</a></li>
+                    <li><a href="critB.html">Criterion B</a></li>
+                    <li><a href="critC.html">Criterion C</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="index.html">Discussion Forum</a></li> 
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section class="main">
+        <div class="top-bar">
+            <h1>Discussion Forum</h1>
+            <center>
+            <form id="comment-form"><h3>
+                <label for="comment-name">Name:</label>
+                <input type="text" id="comment-name" required>
+                <label for="comment-text">Comment:</label>
+                <textarea id="comment-text" rows="4" cols="50" required></textarea></h3>
+                <button type="submit">Post Comment</button>
+            </form>
+          </center>
+
+        <div class="comment-container">
+          <ul id="comment-list"></ul>
+        </div>
+<style>
+  ul {
+    list-style-type: none;
+  }
+</style>
+
+    </section>
+    <section class="footer">
+      <center>
+        <h3>Have a question about the Personal Project? Discuss with a <a href="index.html">global community</a></h3>
+      </center>
+    </section>
+    <script src="discussionboard.js"></script>
+
+</body>
+</html>
